@@ -18,16 +18,16 @@ namespace pain
                 {
                     d[i, j] = dd;
                     dd++;
-                   
+
                 }
             }
 
-            d [4, 4] = 0;
+            d[4, 4] = 0;
             Console.WriteLine("Welcome to the game");
             int[] Zero_Coordinates = new int[2]; // x, y
-                       
+
             int[] numbers = new int[25];
-            for (int i=0; i<25; i++)
+            for (int i = 0; i < 25; i++)
             {
                 numbers[i] = i;
             }
@@ -60,8 +60,8 @@ namespace pain
                 Console.Write("\n");
 
             }
-
-            while (m != d)
+            bool bb = false;
+            while (bb == false)
             {
                 int[] north = new int[2];
                 north[0] = Zero_Coordinates[0] - 1;
@@ -90,12 +90,12 @@ namespace pain
                         southeast[1] = m[east[0], east[1]];
                         Console.WriteLine(southeast[0]);
                         Console.WriteLine(southeast[1]);
-                        Inputse:
+                        
                         int numberinp = Convert.ToInt32(Console.ReadLine());
-                        if (numberinp != southeast[0] && numberinp != southeast[1])
+                        while (numberinp != southeast[0] && numberinp != southeast[1])
                         {
                             Console.WriteLine("try again");
-                            goto Inputse;
+                            numberinp = Convert.ToInt32(Console.ReadLine());
                         }
                         if (numberinp == southeast[0])
                         {
@@ -117,6 +117,7 @@ namespace pain
                             goto ReadMatrix;
                         }
 
+                  
                     }
 
                     if (Zero_Coordinates[1] != 0 && Zero_Coordinates[1] != 4)
@@ -130,12 +131,12 @@ namespace pain
                         Console.WriteLine(westsoutheast[1]);
                         Console.WriteLine(westsoutheast[2]);
 
-                        Inputwse:
+                        
                         int numberinp = Convert.ToInt32(Console.ReadLine());
-                        if (numberinp != westsoutheast[0] && numberinp != westsoutheast[1] && numberinp != westsoutheast[2])
+                        while (numberinp != westsoutheast[0] && numberinp != westsoutheast[1] && numberinp != westsoutheast[2])
                         {
                             Console.WriteLine("try again");
-                            goto Inputwse;
+                            numberinp = Convert.ToInt32(Console.ReadLine());
                         }
                         if (numberinp == westsoutheast[0])
                         {
@@ -183,12 +184,12 @@ namespace pain
                         Console.WriteLine(westsouth[0]);
                         Console.WriteLine(westsouth[1]);
 
-                        Inputws:
+                        
                         int numberinp = Convert.ToInt32(Console.ReadLine());
-                        if (numberinp != westsouth[0] && numberinp != westsouth[1])
+                        while (numberinp != westsouth[0] && numberinp != westsouth[1])
                         {
                             Console.WriteLine("try again");
-                            goto Inputws;
+                            numberinp = Convert.ToInt32(Console.ReadLine());
                         }
 
                         if (numberinp == westsouth[0])
@@ -231,12 +232,12 @@ namespace pain
                         Console.WriteLine(northeastsouth[1]);
                         Console.WriteLine(northeastsouth[2]);
 
-                        Inputnes:
+                       
                         int numberinp = Convert.ToInt32(Console.ReadLine());
-                        if (numberinp != northeastsouth[0] && numberinp != northeastsouth[1] && numberinp != northeastsouth[2])
+                        while (numberinp != northeastsouth[0] && numberinp != northeastsouth[1] && numberinp != northeastsouth[2])
                         {
                             Console.WriteLine("try again");
-                            goto Inputnes;
+                            numberinp = Convert.ToInt32(Console.ReadLine());
                         }
 
                         if (numberinp == northeastsouth[0])
@@ -286,12 +287,12 @@ namespace pain
                         Console.WriteLine(northeastsouthwest[2]);
                         Console.WriteLine(northeastsouthwest[3]);
 
-                        Inputnesw:
+                        
                         int numberinp = Convert.ToInt32(Console.ReadLine());
-                        if (numberinp != northeastsouthwest[0] && numberinp != northeastsouthwest[1] && numberinp != northeastsouthwest[2] && numberinp != northeastsouthwest[3])
+                        while (numberinp != northeastsouthwest[0] && numberinp != northeastsouthwest[1] && numberinp != northeastsouthwest[2] && numberinp != northeastsouthwest[3])
                         {
                             Console.WriteLine("try again");
-                            goto Inputnesw;
+                            numberinp = Convert.ToInt32(Console.ReadLine());
                         }
 
                         if (numberinp == northeastsouthwest[0])
@@ -350,12 +351,12 @@ namespace pain
                         Console.WriteLine(northwestsouth[1]);
                         Console.WriteLine(northwestsouth[2]);
 
-                        Inputnws:
+                       
                         int numberinp = Convert.ToInt32(Console.ReadLine());
-                        if (numberinp != northwestsouth[0] && numberinp != northwestsouth[1] && numberinp != northwestsouth[2])
+                        while (numberinp != northwestsouth[0] && numberinp != northwestsouth[1] && numberinp != northwestsouth[2])
                         {
                             Console.WriteLine("try again");
-                            goto Inputnws;
+                            numberinp = Convert.ToInt32(Console.ReadLine());
                         }
 
                         if (numberinp == northwestsouth[0])
@@ -400,12 +401,12 @@ namespace pain
                         Console.WriteLine(northeast[0]);
                         Console.WriteLine(northeast[1]);
 
-                        Inputne:
+                        
                         int numberinp = Convert.ToInt32(Console.ReadLine());
-                        if (numberinp != northeast[0] && numberinp != northeast[1])
+                        while (numberinp != northeast[0] && numberinp != northeast[1])
                         {
                             Console.WriteLine("try again");
-                            goto Inputne;
+                            numberinp = Convert.ToInt32(Console.ReadLine());
                         }
 
                         if (numberinp == northeast[0])
@@ -441,12 +442,12 @@ namespace pain
                         Console.WriteLine(westnortheast[2]);
 
 
-                        Inputwne:
+                        
                         int numberinp = Convert.ToInt32(Console.ReadLine());
-                        if (numberinp != westnortheast[0] && numberinp != westnortheast[1] && numberinp != westnortheast[2])
+                        while (numberinp != westnortheast[0] && numberinp != westnortheast[1] && numberinp != westnortheast[2])
                         {
                             Console.WriteLine("try again");
-                            goto Inputwne;
+                            numberinp = Convert.ToInt32(Console.ReadLine());
                         }
                         if (numberinp == westnortheast[0])
                         {
@@ -488,12 +489,12 @@ namespace pain
                         Console.WriteLine(westnorth[0]);
                         Console.WriteLine(westnorth[1]);
 
-                        Inputwn:
+                        
                         int numberinp = Convert.ToInt32(Console.ReadLine());
-                        if (numberinp != westnorth[0] && numberinp != westnorth[1])
+                        while (numberinp != westnorth[0] && numberinp != westnorth[1])
                         {
                             Console.WriteLine("try again");
-                            goto Inputwn;
+                            numberinp = Convert.ToInt32(Console.ReadLine());
 
                         }
 
@@ -530,20 +531,33 @@ namespace pain
 
                         Console.Write(m[i, j] + "\t");
 
-
                     }
                     Console.Write("\n");
 
                 }
 
+                bool support = true;
 
-                if (m == d)
+                for (int i=0; i<5; i++)
+                {
+                    for (int j=0; j<5; j++)
+                    {
+                        if (m[i,j] != d[i,j])
+                        {
+                            support=false;
+                        }
+                    }
+                }
+               
+                if (support)
                 {
                     Console.WriteLine("Congratulations, you won");
                     Environment.Exit(0);
                 }
 
             }
+
+            
         }
     }
 }
